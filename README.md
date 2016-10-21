@@ -91,11 +91,11 @@ them, though.
 I have experienced mind-bending plenty of times...
 
 - when I first learned LISP macros
-- when I realized the power of discriminated unions checked at compile
-time
+- when I realized the power of compile-time checked discriminated unions
+- when I wrote my first AST processor and code generator
 - when I learned to think in functional style...
 - etc
 
-Well, VHDL was yet another mind bend.
+Well... VHDL was yet another mind bend.
 
 Totally worth it - nothing like it.
