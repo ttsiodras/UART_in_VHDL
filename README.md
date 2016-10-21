@@ -17,7 +17,7 @@ I haven't done VHDL now, have I? :-)
 
 ## Let's make a UART
 
-I started by watching three magnificent video introductory videos
+I started by watching three magnificent introductory videos
 by Nick Williams:
 
 - https://www.youtube.com/watch?v=pDE2qenDXKQ
