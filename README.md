@@ -17,11 +17,19 @@ I haven't done VHDL now, have I? :-)
 
 ## Let's make a UART
 
-Over the last 3 weekends, I sat down with a trusty XC3S1000 and the
-free Xilinx ISE WebPACK. and moved from example to example, learning
-about signals and processes and state machines. And at some point,
-I connected the TX and RX pins of my PL2303HX USB/TTL to the GPIO
-pins of my FPGA board, and decided to write UART transmitting and
+I started by watching three magnificent video introductory videos
+by Nick Williams:
+
+- https://www.youtube.com/watch?v=pDE2qenDXKQ
+- https://www.youtube.com/watch?v=uhxTgUSZvYE
+- https://www.youtube.com/watch?v=yoytRxOjA-A
+
+I then spent the next 3 weekends, sitting down with a trusty XC3S1000 and
+the free Xilinx ISE WebPACK. and moved from example to example, learning
+about signals and processes and state machines.
+
+And at some point, I connected the TX and RX pins of my PL2303HX USB/TTL to
+the GPIO pins of my FPGA board, and decided to write UART transmitting and
 receiving of my own.
 
     --->        .------>        .------>        --->        .----->
