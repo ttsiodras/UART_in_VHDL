@@ -40,9 +40,9 @@ receiving of my own.
                                                         |
     Samples must be taken in the middle of the pulses --'
 
-UART is the very simple serial protocol; with one start bit pulling down the
-line to the LOW voltage, then the N bits of our octet, then our one or
-two stop bits, pulling the line UP.
+UARTs follow a very simple protocol; with one start bit pulling down the
+line to the LOW voltage, then the N bits of the octet, then one or
+two stop bits (8N1 or 8N2), pulling the line back UP.
 
 It turned out that transmitting serial data was child's play - I completed
 it within a couple of hours, and it pretty much worked on the first try.
@@ -80,8 +80,14 @@ in the end (even though I begun with the streaming one), since that gave
 me more control over what happens and when. It's good to know both of
 them, though.
 
-My mind has experienced bending plenty of times; when I first learned LISP
-macros, when I realized the power of discriminated unions checked at compile
-time, when I learned to think in functional style...
+I have experienced mind-bending plenty of times...
 
-Well, VHDL was yet another mind bend. Totally worth it, nothing like it.
+- when I first learned LISP macros
+- when I realized the power of discriminated unions checked at compile
+time
+- when I learned to think in functional style...
+- etc
+
+Well, VHDL was yet another mind bend.
+
+Totally worth it - nothing like it.
