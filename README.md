@@ -66,13 +66,13 @@ I waited for...
 Receiving however, and decoding properly, was another matter altogether,
 The circuit had to synchronize to the droping of the start bit, so that
 part of the circuit had to
-[run at full speed (48MHz)](blob/master/Example2.vhd#L643) -
+[run at full speed (48MHz)](Example2.vhd#L643) -
 whereas after the sync, it had to sample the 8 data bits 
-[at their middle](blob/master/Example2.vhd#L660)
+[at their middle](Example2.vhd#L660)
 (so, running at the baud rate, with a phase shift).
 
 And the samples themselves have noise, which
-[must be filtered](blob/master/Example2.vhd#L521) out.
+[must be filtered](Example2.vhd#L521) out.
 
 All these seem simple, basic rules in hindsight - but it's a quite different
 thing when you are discovering them on your own, as issues arise...
@@ -82,11 +82,11 @@ emitted gibberish. Probing with my bitscope I saw that the sent values were
 fine, so the bug was in my VHDL code - but how do you debug HW? So I learned
 to do simulation in ISim, and saw my errors... I realized I had to sync to 
 the first drop (the start bit) at full speed, and then that I must save
-the [decoded data in a FIFO](blob/master/Example2.vhd#L686)
+the [decoded data in a FIFO](Example2.vhd#L686)
 to decouple the C driver code that reads from the VHDL code that writes...
 
 And that that FIFO writing must be
-[strobed at full speed](blob/master/Example2.vhd#L583)...
+[strobed at full speed](Example2.vhd#L583)...
 
 All in all, fascinating stuff.
 
